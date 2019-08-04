@@ -1,21 +1,30 @@
 html, body {
   font-family: 'Noto Sans HK', Calibri;
   margin: 0;
-}
-
-
-#navbar {
-  width: 300px;
-  height: 100%;
-  border-right: 2px solid black;
-  position: fixed;
-  background-color: rgba(0,0,100, 0.2);
-  margin: 0 auto;
+/*   color: #FFF7F7; */
 }
 
 .container {
   display: flex;
+  flex-direction: column;
 }
+
+body{
+background: url(https://res.cloudinary.com/marcmdion/image/upload/v1561602070/bgw_eywmyp.jpg) fixed;  
+  background-size: cover
+}
+
+#navbar {
+  width: 300px;
+  min-width: 250px;
+  height: 100%;
+  border-right: 2px solid black;
+  position: fixed;
+  background-color: rgba(0,0,100, 0.1);
+  margin: 0 auto;
+}
+
+
 
 #main-doc {
   margin-left: 350px;
@@ -25,7 +34,7 @@ html, body {
 header {
 font-weight: bold;
 font-size: 1.5rem;
-padding: 15px;
+padding: 10px;
 
 }
 
@@ -39,9 +48,10 @@ a {
   border: 1px solid black;
   width: 100%;
   font-size: 1.5em;
-  padding: 5px 15px;
+  padding: 5px 0px;
   position: relative;
   list-style: none;
+  text-align: center;
 }
 
 #navbar li:first-child {
@@ -60,3 +70,24 @@ a {
 #navbar a {
   color: black;
 }
+
+code {
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width:500px) {
+  #navbar {
+    width: 100%;
+    position: relative;
+  }
+  
+  #main-doc {
+    width: 90%;
+    margin-left: 20px;
+    padding: 25px;
+  }
+  
+}s
